@@ -5,7 +5,7 @@ user_win = 0
 user_luser = 0
 rounds = 0
 
-name = input('Cual es tu nombre? == > ')
+name = input('Cual es tu nombre? ==> ')
 
 print(f"\n Oye {name.upper()}\n Jugamos piedra, papel o tijera, Aceptas el reto?? ")
 resp_user = input("Si o No  ")
@@ -21,7 +21,7 @@ while resp_user == "si" or resp_user == "s":
         if opcion_user == opcion_compu:
             print(f"\nHas elegido : {opcion_user}")
             print(f"La computadora ha elegido: {opcion_compu}")
-            print("Uppps, quedaron empatados.")
+            print("Negativo, quedaron empatados.")
             empates_count +=1
             break
         #por si el usuario elige tijera
