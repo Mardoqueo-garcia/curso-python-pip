@@ -7,3 +7,5 @@ print("Seria bueno aprender un poco mas de vim, asi evitamos salir de la termina
 for ele in range(1,14):
     if ele <8:
         print("Este viene del for ==> ",ele)
+
+print('Agregamos una llave ssh, veremos si nos pide la clave siempre antes de hacer el push')
