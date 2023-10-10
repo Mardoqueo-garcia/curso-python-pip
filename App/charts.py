@@ -8,12 +8,12 @@ def generate_bar_chart(name, labels, values): #funcion para generar grafica de b
   plt.savefig(f'./imgs/{name}.png') #para mostrar la grafica y que la guarde, le indicamos cual es el nombre segun el pais que nos digiten, se guardara en la carpeta imgs
   plt.close() #para cerrar una vez se halla generado la grafica
 
-def generate_pie_chart(name, labels, values): #funcion para generar grafica de pastel
-  fig, ax = plt.subplots() #funcion de la libreria
+def generate_pie_chart(labels, values):
+  fig, ax = plt.subplots()
   ax.pie(values, labels=labels)
   ax.axis('equal')
-  plt.savefig(f'./imgs/{name}.png') #para mostrar la grafica y que la guarde, le indicamos cual es el nombre
-  plt.close() #para cerrar una vez se halla generado la grafica
+  plt.savefig('my_pie.png')
+  plt.close()
 
 #lo correremos como un scrip
 if __name__ == '__main__':
