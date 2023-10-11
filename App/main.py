@@ -1,6 +1,6 @@
 import utils #para obtener la lista segun el pais seleccionado
 import read_csv #para leer el archivo csv
-import charts #para graficar
+import charts 
 import pandas as pd #importamos la libreria pandas
 
 def run():
@@ -30,13 +30,13 @@ data = read_csv.read_csv('data.csv') #obtenemos la data
 
 '''
 #CODIGO USANDO LA LIBRERIA DE PANDAS
-  print('Ejecutando')
+  print('Iniciando la ejecucion del programa')
   df = pd.read_csv('data.csv') #de esta forma estamos leyendo el csv, ahorrando asu las linea de codigo manual
   df = df[df['Continent']=='Asia'] #de esta forma estamos filtrando los datos del csv conforme el continente dado
   countries = df['Country/Territory'].values #de esta manera estamos trayendo todos los valores de esa columna
   porcentaje = df['World Population Percentage'].values
   charts.generate_pie_chart(countries, porcentaje) 
-  print('Termino')
+  print('Termino la ejecusion')
 
 
 if __name__ == '__main__':
