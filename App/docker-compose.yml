@@ -1,0 +1,9 @@
+#con este archivo vamos a correr nuestro contenedor de docker
+version: '3'
+services: #etiqueta
+  app-csv: #nombre del servicio, cualquier nombre deseable
+    build: #etiqueta
+      context: . #el contexto del build es la carpeta donde estamos ubicamos en este momento.
+      dockerfile: Dockerfile #el dockerfile que va a leer, ese sera el archivo
+    volumes: #etiqueta
+      - .:/app #para que los archivos locales esten conectados con el contenedor y se actualicen al hacer algun cambio en el archivo. Con esto ya estaran enlazados los archivos.

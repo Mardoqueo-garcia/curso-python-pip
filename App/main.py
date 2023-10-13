@@ -31,10 +31,10 @@ data = read_csv.read_csv('data.csv') #obtenemos la data
 '''
 #CODIGO USANDO LA LIBRERIA DE PANDAS
   print('Iniciando la ejecucion del programa')
-  df = pd.read_csv('data.csv') #de esta forma estamos leyendo el csv, ahorrando asu las linea de codigo manual
-  df = df[df['Continent']=='Asia'] #de esta forma estamos filtrando los datos del csv conforme el continente dado
-  countries = df['Country/Territory'].values #de esta manera estamos trayendo todos los valores de esa columna
-  porcentaje = df['World Population Percentage'].values
+  df = pd.read_csv('data.csv') #de esta forma estamos leyendo el csv, ahorrando muchas lineas de codigo
+  df2 = df[df['Continent']=='Asia'] #de esta forma estamos filtrando los datos del csv conforme el continente dado
+  countries = df2['Country/Territory'].values #de esta manera estamos trayendo todos los valores de esa columna
+  porcentaje = df2['World Population Percentage'].values
   charts.generate_pie_chart(countries, porcentaje) 
   print('Termino la ejecusion')
 
